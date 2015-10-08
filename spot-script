@@ -1,0 +1,10 @@
+#!/usr/bin/env osascript
+
+tell application "Spotify"
+    if it is running then
+        set trackname to name of current track
+        set artistname to artist of current track
+
+        artistname & ";" & trackname
+    end if
+end tell
